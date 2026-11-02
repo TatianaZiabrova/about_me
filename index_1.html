@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Татьяна Зяброва, педагог по химии</title>
+<style>:root{color-scheme:light}</style>
+</head>
+<body>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Учитель химии и биологии. Подготовка к ЕГЭ и ОГЭ онлайн, шпаргалки, короткие видео-разборы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: одна колонка 1040px, крупный заголовок слева, рядом образ-пример в рамке видоискателя; секции разделены воздухом, а не линиями.
+   Palette: paper / ink / lime (маркер, только под словом) / cobalt (ссылки) / line. */
+:root{
+  --bg:#f3f1ea; --surface:#fbfaf6; --ink:#0e0e10; --muted:#55555c; --line:#d9d6cb;
+  --lime:#c8ff2e; --on-lime:#0e0e10; --cobalt:#2b4bff; --cobalt-ink:#2b4bff;
+  --display:'Unbounded','Arial Black',sans-serif; --text:'Onest','Segoe UI',Arial,sans-serif; --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 42' preserveAspectRatio='none'%3E%3Cpath d='M8.0 6.1 L23.0 5.2 L38.0 7.2 L53.0 4.5 L68.0 6.3 L83.0 5.4 L98.0 3.9 L113.0 5.7 L128.0 3.4 L143.0 5.0 L158.0 3.2 L173.0 3.1 L188.0 4.4 L193.0 5.0 L199.0 10.7 L195.0 20.0 L200.0 28.3 L194.0 34.0 L192.0 35.1 L177.0 32.2 L162.0 32.8 L147.0 34.8 L132.0 36.4 L117.0 34.9 L102.0 34.3 L87.0 37.1 L72.0 33.1 L57.0 36.9 L42.0 34.6 L27.0 34.1 L12.0 34.2 L8.0 30.0 L3.0 23.2 L6.0 17.0 L2.0 11.6 Z' fill='black'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+}
+:root{color-scheme:light}
+:root[data-theme="dark"]{
+  --bg:#0e0e10; --surface:#17171a; --ink:#f3f1ea; --muted:#a3a3ab; --line:#2e2e34; --cobalt-ink:#8fa2ff; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.55;
+  padding-block:0 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1040px;margin:0 auto}
+a{color:var(--cobalt-ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--cobalt-ink);outline-offset:3px}
+sub,sup{font-size:.7em;line-height:0}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+h1{font-weight:800;font-size:clamp(1.9rem,6.4vw,3.6rem);line-height:1.08}
+h2{font-weight:800;font-size:clamp(1.35rem,3.6vw,2rem);line-height:1.15}
+h3{font-weight:700;font-size:1.05rem;line-height:1.25;letter-spacing:-.01em}
+p{margin:0}
+.meta{font-family:var(--mono);font-weight:500;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.hl{position:relative;z-index:0;color:var(--on-lime);padding:0 .1em;margin:0 .1em;white-space:nowrap}
+.hl::before{content:"";position:absolute;z-index:-1;left:-.14em;right:-.2em;top:.14em;bottom:-.02em;background:var(--lime);transform:rotate(-1deg);-webkit-mask:var(--mask);mask:var(--mask)}
+.frame{position:relative;padding:22px 24px}
+.frame>i{position:absolute;width:16px;height:16px;border:0 solid var(--ink)}
+.frame>i:nth-child(1){top:0;left:0;border-top-width:3px;border-left-width:3px}
+.frame>i:nth-child(2){top:0;right:0;border-top-width:3px;border-right-width:3px}
+.frame>i:nth-child(3){bottom:0;left:0;border-bottom-width:3px;border-left-width:3px}
+.frame>i:nth-child(4){bottom:0;right:0;border-bottom-width:3px;border-right-width:3px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:10px 20px;border:2px solid var(--ink);border-radius:6px;font:600 .95rem var(--text);text-decoration:none;cursor:pointer;color:var(--ink);background:transparent}
+.btn.main{background:var(--lime);color:var(--on-lime);border-color:#0e0e10}
+.btn.sec{border-color:var(--cobalt-ink);color:var(--cobalt-ink)}
+.btn:hover{transform:translateY(-1px)}
+.btn[disabled]{opacity:.55;cursor:progress}
+section{padding-top:96px}
+.sec-head{display:grid;gap:12px;max-width:62ch;margin-bottom:32px}
+.sec-head p{color:var(--muted)}
+
+/* hero */
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:20px;flex-wrap:wrap}
+.tbtn{font:500 .85rem var(--text);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 16px;min-height:40px;cursor:pointer}
+.tbtn:hover{border-color:var(--ink)}
+.hero{padding-top:56px;display:grid;gap:0}
+.hero .nums{margin-top:56px}
+.hero .lead{font-size:clamp(1.15rem,2.4vw,1.4rem);line-height:1.4;margin-top:20px;max-width:30ch;font-weight:500}
+.hero .about{margin-top:16px;max-width:54ch;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.sample{display:grid;gap:14px}
+.sample .formula{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:1.15;letter-spacing:-.02em}
+.sample p{font-size:.98rem}
+.sample .meta{font-size:.68rem}
+
+/* results */
+.nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.num{padding:8px 24px 8px 0;display:grid;gap:8px;align-content:start}
+.num+.num{padding-left:24px;border-left:1px solid var(--line)}
+.num b{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,5vw,3rem);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.num span{color:var(--muted);max-width:26ch}
+
+/* method */
+.steps{list-style:none;margin:0 0 56px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;counter-reset:s}
+.steps li{display:grid;gap:8px;align-content:start;counter-increment:s}
+.steps li::before{content:counter(s);font-family:var(--mono);font-weight:500;font-size:.8rem;color:var(--muted)}
+.steps p{color:var(--muted);font-size:.97rem}
+.imgs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.img{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:22px;display:grid;gap:10px;align-content:start}
+.img p{font-size:.98rem}
+.img .meta{font-size:.68rem}
+
+/* sheets */
+.sheets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.sheet{display:grid;gap:16px;align-content:start}
+.sheet .prev{display:block;background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.sheet .prev img{display:block;width:100%;height:auto}
+.sheet p{color:var(--muted);font-size:.97rem}
+.sheet .acts{display:flex;flex-wrap:wrap;gap:10px}
+.status{min-height:1.4em;font-size:.88rem;color:var(--muted);margin-top:10px}
+.anat{margin-top:48px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;align-items:start}
+.anat ol{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.anat li::marker{font-family:var(--mono);color:var(--muted)}
+
+/* reels */
+.reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.reel{display:grid;gap:10px;align-content:start;margin:0}
+.reel .scr{position:relative;aspect-ratio:9/16;max-width:100%;background:var(--surface);border:1px solid var(--line);border-radius:6px;display:grid;place-items:center;text-align:center;padding:14px;color:var(--muted);font-size:.88rem;overflow:hidden}
+.reel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
+.reel figcaption{font-size:.92rem}
+.reel figcaption b{display:block;font-weight:600}
+.reel figcaption span{color:var(--muted)}
+.rule{margin-top:36px;max-width:64ch;color:var(--muted)}
+
+/* sales */
+.pairs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+.pair{display:grid;gap:6px;align-content:start}
+.pair p{color:var(--muted);font-size:.98rem}
+
+/* fit table */
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th{font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:0 20px 10px 0;border-bottom:1px solid var(--ink)}
+td{vertical-align:top;padding:14px 20px 14px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+td:first-child{font-weight:600;width:42%}
+
+/* contact */
+.contact{display:grid;gap:20px;justify-items:start}
+.handle{font-family:var(--mono);font-weight:500;font-size:clamp(1.1rem,3vw,1.5rem);user-select:all}
+.foot{margin-top:72px;color:var(--muted);font-size:.85rem}
+
+@media (max-width:860px){
+  .imgs{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .anat{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  section{padding-top:64px}
+  .nums{grid-template-columns:minmax(0,1fr);gap:20px}
+  .num,.num+.num{padding:0;border-left:0}
+  .num+.num{border-top:1px solid var(--line);padding-top:20px}
+  .imgs,.sheets,.pairs{grid-template-columns:minmax(0,1fr)}
+  .reels{grid-template-columns:minmax(0,1fr);max-width:360px}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .frame{padding:18px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+
+<div class="wrap">
+
+<div class="top">
+  <p class="meta">Отклик на вакансию · педагог по химии · EXtremum</p>
+  <button class="tbtn" type="button" id="theme" aria-pressed="false">Тёмная тема</button>
+</div>
+
+<header class="hero">
+  <h1>Татьяна Зяброва</h1>
+  <p class="about">Учитель химии и биологии. Готовлю к ЕГЭ и ОГЭ онлайн, снимаю короткие видео-разборы заданий, пишу конспекты и шпаргалки.</p>
+  <div class="cta">
+    <a class="btn main" href="#sheets">Скачать шпаргалки</a>
+    <a class="btn" href="#reels">Смотреть ролики</a>
+    <a class="btn sec" href="#contact">Написать мне</a>
+  </div>
+  <div class="nums">
+    <div class="num"><b>97, 98, 99</b><span>самые высокие баллы моих учеников на ЕГЭ по химии</span></div>
+    <div class="num"><b>40 → 77</b><span>средний балл учеников вырос</span></div>
+    <div class="num"><b>97 %</b><span>учеников поступили</span></div>
+  </div>
+</header>
+
+<section id="method">
+  <div class="sec-head">
+    <h2>Как я объясняю: образами</h2>
+    <p>Я не заставляю учить всё подряд. Нахожу место, где ученики ошибаются, и привязываю к нему картинку.</p>
+  </div>
+  <ol class="steps">
+    <li><h3>Найти, где ошибаются</h3><p>Два-три места в теме, на которых теряют баллы.</p></li>
+    <li><h3>Придумать образ</h3><p>Одна картинка на одно правило.</p></li>
+    <li><h3>Проверить на задаче</h3><p>Пересчитываю уравнения, решаю пример.</p></li>
+    <li><h3>Повторить</h3><p>Через 1, 3, 7 и 14 дней.</p></li>
+  </ol>
+  <div class="imgs">
+    <article class="img"><span class="meta">Электролиз · задание 20</span><h3>Mn и Pb читаю «МаПа»</h3>
+      <p>Мама и папа сидят посередине, между ними все средние металлы. Левее них металлы «маленькие»: на катоде выходит водород. Правее водорода «старенькие»: выходит сам металл. Мама и папа дают и то и другое.</p></article>
+    <article class="img"><span class="meta">Скорость реакции · задание 18</span><h3>Реакция как готовка</h3>
+      <p>Сильнее огонь, быстрее готовится: это температура. Кухонный комбайн ускоряет и в блюдо не попадает: это катализатор. Крошка шоколада тает в молоке быстрее плитки: это измельчение.</p></article>
+    <article class="img"><span class="meta">Органика · алканы</span><h3>Парафиновая свеча</h3>
+      <p>Зажгли свечу: горение. Накрыли колпачком: окисление. Посветили фонариком: хлор заменил водород. Сломали пополам: крекинг.</p></article>
+  </div>
+</section>
+
+<section id="sheets">
+  <div class="sec-head">
+    <h2>Шпаргалки</h2>
+    <p>Два примера по заданиям 18 и 20. Каждая занимает две страницы A4: правило, образы, три вопроса к заданию, разобранный пример, ловушки и вопросы для самопроверки.</p>
+  </div>
+  <div class="sheets">
+    <article class="sheet">
+      <a class="prev" href="files/shpargalka_18_skorost_reakcii.pdf" target="_blank" rel="noopener" aria-label="Открыть шпаргалку по заданию 18"><img src="img/s18-1.png" alt="Первая страница шпаргалки по заданию 18" loading="lazy"></a>
+      <div><span class="meta">Задание 18</span><h3 style="margin-top:6px">Скорость химической реакции</h3></div>
+      <div class="acts">
+        <button class="btn main" type="button" data-file="files/shpargalka_18_skorost_reakcii.pdf" data-name="Шпаргалка_18_скорость_реакции.pdf">Скачать PDF</button>
+        <a class="btn" href="files/shpargalka_18_skorost_reakcii.pdf" target="_blank" rel="noopener">Открыть</a>
+      </div>
+    </article>
+    <article class="sheet">
+      <a class="prev" href="files/shpargalka_20_elektroliz.pdf" target="_blank" rel="noopener" aria-label="Открыть шпаргалку по заданию 20"><img src="img/s20-1.png" alt="Первая страница шпаргалки по заданию 20" loading="lazy"></a>
+      <div><span class="meta">Задание 20</span><h3 style="margin-top:6px">Электролиз растворов солей</h3></div>
+      <div class="acts">
+        <button class="btn main" type="button" data-file="files/shpargalka_20_elektroliz.pdf" data-name="Шпаргалка_20_электролиз.pdf">Скачать PDF</button>
+        <a class="btn" href="files/shpargalka_20_elektroliz.pdf" target="_blank" rel="noopener">Открыть</a>
+      </div>
+    </article>
+  </div>
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+</section>
+
+<section id="reels">
+  <div class="sec-head">
+    <h2>Короткие видео</h2>
+    <p>Разбор одного задания за минуту, для Reels и TikTok.</p>
+  </div>
+  <div class="reels">
+    <figure class="reel"><div class="scr"><video controls playsinline preload="none" poster="reels/poster1.jpg" src="reels/reel1.mp4" aria-label="Ролик про пассивацию"></video></div><figcaption><b>Пассивация: крепче не значит быстрее</b><span>Задание 18 · 1:07</span></figcaption></figure>
+    <figure class="reel"><div class="scr"><video controls playsinline preload="none" poster="reels/poster2.jpg" src="reels/reel2.mp4" aria-label="Ролик про три вопроса к заданию 18"></video></div><figcaption><b>Три вопроса к заданию 18</b><span>Задание 18 · 0:52</span></figcaption></figure>
+    <figure class="reel"><div class="scr"><video controls playsinline preload="none" poster="reels/poster3.jpg" src="reels/reel3.mp4" aria-label="Ролик про литий"></video></div><figcaption><b>Литий-лентяй</b><span>Задание 18 · 1:08</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="sales">
+  <div class="sec-head">
+    <h2>Продвижение</h2>
+    <p>Только начинаю: планирую вести Telegram-канал по химии, чтобы делиться шпаргалками и разборами заданий и приводить учеников.</p>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="sec-head">
+    <h2>Сайт для занятий</h2>
+    <p>Я сделала сайт для репетиторов: задания, конспекты, онлайн-доски. Ученики занимаются на нём, а ИИ-ассистент помогает им с заданиями.</p>
+  </div>
+</section>
+
+<section id="fit">
+  <div class="sec-head">
+    <h2>Что нужно педагогу и что у меня есть</h2>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Задача</th><th>Что у меня</th></tr></thead>
+      <tbody>
+        <tr><td>Онлайн-занятия для 10–11 классов</td><td>Дистанционное обучение, подготовка к ЕГЭ и ОГЭ по химии и биологии.</td></tr>
+        <tr><td>Короткие обучающие видео</td><td>Ролики-разборы заданий, раздел выше.</td></tr>
+        <tr><td>Конспекты, тесты, задания</td><td>Шпаргалки, конспекты по темам, вопросы для самопроверки.</td></tr>
+        <tr><td>Объяснять простым языком</td><td>Образы и запоминалки вместо зубрёжки.</td></tr>
+        <tr><td>Знание структуры экзамена</td><td>Разбираю задания ЕГЭ: условие, ловушки, ответ.</td></tr>
+        <tr><td>Блог или канал по теме</td><td>Планирую вести Telegram-канал по химии.</td></tr>
+        <tr><td>Платформы и LMS</td><td>Собственный сайт с заданиями, онлайн-досками и ИИ-ассистентом.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="frame contact">
+    <i></i><i></i><i></i><i></i>
+    <h2>Напишите мне в <span class="hl">Telegram</span></h2>
+    <p class="handle" id="handle">@tatiana_chimbio</p>
+    <div class="cta" style="margin-top:0">
+      <a class="btn main" href="https://t.me/tatiana_chimbio" target="_blank" rel="noopener">Открыть Telegram</a>
+      <button class="btn" type="button" id="copy">Скопировать ник</button>
+    </div>
+    <p class="status" id="copystatus" role="status" aria-live="polite"></p>
+  </div>
+  <p class="foot">Татьяна Зяброва · учитель химии и биологии</p>
+</section>
+
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement,tb=document.getElementById('theme');
+  function sync(){var d=root.getAttribute('data-theme')==='dark';tb.textContent=d?'Светлая тема':'Тёмная тема';tb.setAttribute('aria-pressed',String(d))}
+  sync();
+  tb.addEventListener('click',function(){root.setAttribute('data-theme',root.getAttribute('data-theme')==='dark'?'light':'dark');sync()});
+  var st=document.getElementById('status');
+  function say(t){st.textContent=t}
+  document.querySelectorAll('button[data-file]').forEach(function(b){
+    b.addEventListener('click',async function(){
+      var label=b.textContent; b.disabled=true; b.textContent='Готовлю файл…'; say('');
+      try{
+        var d=window.claude&&window.claude.use?await window.claude.use('downloads'):null;
+        if(!d){var a=document.createElement('a');a.href=b.dataset.file;a.download=b.dataset.name;document.body.appendChild(a);a.click();a.remove();say('Файл скачивается. Если ничего не произошло, нажмите «Открыть».');return}
+        var r=await fetch(b.dataset.file); if(!r.ok) throw new Error('fetch');
+        var blob=await r.blob();
+        await d.save({filename:b.dataset.name,data:blob});
+        say('Файл сохранён.');
+      }catch(e){
+        if(e&&e.code==='declined'){say('Сохранение отменено.')}
+        else{say('Не получилось скачать. Нажмите «Открыть» и сохраните PDF из просмотра.')}
+      }finally{b.disabled=false;b.textContent=label}
+    });
+  });
+  var c=document.getElementById('copy'),cs=document.getElementById('copystatus'),h=document.getElementById('handle');
+  c.addEventListener('click',function(){
+    function fallback(){var r=document.createRange();r.selectNodeContents(h);var s=getSelection();s.removeAllRanges();s.addRange(r);cs.textContent='Ник выделен, скопируйте его вручную.'}
+    try{navigator.clipboard.writeText('@tatiana_chimbio').then(function(){cs.textContent='Ник скопирован.'},fallback)}catch(e){fallback()}
+  });
+})();
+</script>
+
+</body>
+</html>
